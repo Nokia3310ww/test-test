@@ -1,9 +1,15 @@
 #include <Arduino.h>
+#include "displayph.h"
 
 
+float ph=7.5;
 void setup() {
-  // put your setup code here, to run once:
   pinMode(17,OUTPUT);
+  init_display();
+  display_ph(ph);
+  
+  
+
 }
 
 void loop() {
